@@ -432,7 +432,7 @@ body._lock {
 }
 
 /*-------------------------------------------------------------*/
-/*-----benefits-------------------------------------------------*/
+/*-----benefits------------------------------------------------*/
 /*-------------------------------------------------------------*/
 
 .page__benefits {
@@ -530,6 +530,54 @@ body._lock {
     }
   }
 }
+
+/*-------------------------------------------------------------*/
+/*-----Warranties----------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__warranties {
+  margin-bottom: 150px;
+}
+
+.warranties {
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 90px;
+  }
+
+  &__warranty {
+    max-width: 500px;
+    display: flex;
+    gap: 40px 40px;
+
+    .warranty__image {
+      width: 120px;
+      height: 130px;
+    }
+
+    .warranty__title {
+      font-family: "Raleway";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 23px;
+      color: #093636;
+      margin-bottom: 20px;
+    }
+
+    .warranty__paragraph {
+      font-size: 16px;
+      line-height: 22px;
+      color: #00325a;
+    }
+  }
+}
+
 
 /*-------------------------------------------------------------*/
 /*-----Footer--------------------------------------------------*/
