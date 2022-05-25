@@ -1,14 +1,16 @@
 @import "./modules/_nullstyle";
 @import "./modules/_anim-scroll";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap");
 
 /*-------------------------------------------------------------*/
 /*-----The Foundation------------------------------------------*/
 /*-------------------------------------------------------------*/
 
 body {
-
+  font-family: "Nunito", sans-serif;
+  background: #f9fcff;
+  color: #093636;
 }
 
 body._lock {
@@ -63,6 +65,10 @@ body._lock {
 .header {
   width: 100%;
   margin-bottom: 25px;
+  background: rgba(249, 252, 255, 0.4);
+  border: 1px solid #e1f0ee;
+  backdrop-filter: blur(200px);
+  margin-bottom: 100px;
 }
 
 .header__menu {
@@ -76,16 +82,10 @@ body._lock {
 
 .menu {
   &__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0px 15px;
-  }
-
-  & h1 {
     font-weight: 700;
-    font-size: 30px;
-    line-height: 28px;
+    font-size: 48px;
+    line-height: 48px;
+    color: #306e9d;
   }
 
   &__body {
@@ -118,16 +118,15 @@ body._lock {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px 20px;
+  gap: 20px 80px;
 }
 
 .menu__link {
-  font-size: 16px;
-  line-height: 28px;
-
-  color: #ffffff;
-  &:hover {
-  }
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #093636;
 }
 
 /*-------------------------------------------------------------*/
