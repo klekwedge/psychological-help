@@ -34,10 +34,15 @@ body._lock {
 }
 
 ._title {
+  font-family: "Raleway";
   font-weight: 700;
-  font-size: 32px;
-  line-height: 48px;
-  text-align: center;
+  font-size: 40px;
+  line-height: 110%;
+  color: #00325a;
+
+  & span {
+    color: #226699;
+  }
 }
 
 ._subtitle {
@@ -260,15 +265,7 @@ body._lock {
   }
 
   &__title {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 41px;
-    line-height: 110%;
     margin-bottom: 25px;
-    color: #093636;
-    & span {
-      color: #226699;
-    }
   }
 
   &__subtitle {
@@ -340,17 +337,7 @@ body._lock {
   }
 
   &__title {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 110%;
-    color: #093636;
-    text-align: left;
     margin-bottom: 35px;
-
-    & span {
-      color: #226699;
-    }
   }
 
   &__paragraph {
@@ -406,13 +393,6 @@ body._lock {
   }
 
   &__title {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 110%;
-    color: #093636;
-    text-align: left;
-    margin: 0;
     margin-bottom: 40px;
   }
 
@@ -461,13 +441,7 @@ body._lock {
 
 .benefits {
   &__title {
-    text-align: left;
-    margin: 0;
     margin-bottom: 80px;
-
-    & span {
-      color: #226699;
-    }
   }
 
   &__list {
@@ -497,6 +471,59 @@ body._lock {
     }
 
     .benefit__paragraph {
+      font-size: 16px;
+      line-height: 22px;
+      color: #00325a;
+    }
+  }
+}
+
+/*-------------------------------------------------------------*/
+/*-----Advantages----------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__advantages {
+  margin-bottom: 150px;
+}
+
+.advantages {
+  background: linear-gradient(180deg, #c6e1f6 0%, #e1f0ee 100%);
+  &__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 100px;
+  }
+
+  &__advantage {
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+
+    .advantage__image {
+      width: 120px;
+      height: 130px;
+      margin-bottom: 40px;
+    }
+
+    .advantage__title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 23px;
+      color: #093636;
+      margin-bottom: 20px;
+    }
+
+    .advantage__paragraph {
       font-size: 16px;
       line-height: 22px;
       color: #00325a;
