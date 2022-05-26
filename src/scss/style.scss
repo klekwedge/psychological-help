@@ -987,6 +987,48 @@ div .questions__container {
   }
 }
 
+/*-------------------------------------------------------------*/
+/*-----Advantages----------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__ask {
+  margin-bottom: 180px;
+}
+
+.ask {
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  &__socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 30px;
+  }
+
+  &__social {
+    flex: 1 1 30%;
+    max-width: 360px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 5px 26px rgba(184, 184, 184, 0.15);
+    border-radius: 12px;
+    padding: 25px 60px 25px 25px;
+
+    .social__title {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 110%;
+      color: #093636;
+    }
+  }
+}
 
 /*-------------------------------------------------------------*/
 /*-----Trial---------------------------------------------------*/
@@ -1056,7 +1098,6 @@ div .questions__container {
     gap: 15px 15px;
   }
 }
-
 
 /*-------------------------------------------------------------*/
 /*-----Footer--------------------------------------------------*/
