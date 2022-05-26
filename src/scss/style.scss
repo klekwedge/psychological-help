@@ -642,6 +642,131 @@ body._lock {
 }
 
 /*-------------------------------------------------------------*/
+/*-----specialists--------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__specialists {
+  margin-bottom: 150px;
+}
+
+.specialists {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 40px;
+  }
+
+  &__specialist {
+    max-width: 355px;
+    padding: 50px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(184, 184, 184, 0.15);
+    border-radius: 40px;
+
+    .specialist__image {
+      margin-bottom: 35px;
+    }
+
+    .specialist__title {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 110%;
+      color: #093636;
+      margin-bottom: 20px;
+    }
+
+    .specialist__characteristics {
+      display: flex;
+      flex-direction: column;
+      gap: 10px 10px;
+      margin-bottom: 20px;
+    }
+
+    .specialist__characteristic {
+      font-size: 15px;
+      line-height: 22px;
+      color: #00325a;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .specialist__characteristic::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url(../assets/img/check.png) no-repeat;
+    }
+
+    .specialist__cost {
+      display: flex;
+      gap: 35px 35px;
+      align-items: center;
+      margin-bottom: 25px;
+
+      .cost__tariff {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .cost__value {
+        font-size: 10px;
+        line-height: 110%;
+        color: #00325a;
+        & span {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 107.9%;
+          color: #00325a;
+        }
+      }
+
+      .cost__duration {
+        font-size: 10px;
+        line-height: 14px;
+        color: #434958;
+      }
+    }
+
+    .specialist__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px 5px;
+      margin-bottom: 25px;
+    }
+
+    .specialist__tag {
+      padding: 4px 10px;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 14px;
+      border: 2px solid #e1e5f0;
+      border-radius: 2px;
+      color: #434958;
+    }
+
+    .specialist__button {
+      padding: 12px 40px;
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      background: #226699;
+      border-radius: 4px;
+    }
+  }
+}
+
+/*-------------------------------------------------------------*/
 /*-----Questions-----------------------------------------------*/
 /*-------------------------------------------------------------*/
 
@@ -683,11 +808,11 @@ div .questions__container {
     }
 
     .question__title {
-      font-family: 'Raleway';
+      font-family: "Raleway";
       font-weight: 600;
       font-size: 32px;
       line-height: 38px;
-      color: #093636; 
+      color: #093636;
     }
 
     .question__answer {
