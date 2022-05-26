@@ -1034,9 +1034,6 @@ div .questions__container {
 /*-----Trial---------------------------------------------------*/
 /*-------------------------------------------------------------*/
 
-.page__trial {
-  margin-bottom: 120px;
-}
 
 .trial {
   position: relative;
@@ -1113,5 +1110,79 @@ div .questions__container {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px 20px;
+  }
+}
+
+/*-------------------------------------------------------------*/
+/*-----Footer--------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.footer {
+  background: rgba(249, 252, 255, 0.4);
+  border-top: 1px solid #e1f0ee;
+  backdrop-filter: blur(200px);
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+  }
+
+  &__social {
+    display: flex;
+    gap: 15px 15px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__logo {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #306e9d;
+    margin-bottom: 20px;
+  }
+
+  &__root {
+    font-size: 25px;
+    line-height: 34px;
+    color: #434958;
+  }
+
+  &__agreement {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #434958;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  &__confidentiality {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #226699;
+    max-width: 400px;
+  }
+
+  &__service {
+    font-size: 25px;
+    line-height: 34px;
+    color: #226699;
+    margin-bottom: 20px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 15px;
   }
 }
