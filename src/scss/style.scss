@@ -365,14 +365,35 @@ body._lock {
     align-items: center;
     gap: 15px 15px;
   }
-}
 
-.comfort__wrapper {
-  max-width: 250px;
-}
+  &__wrapper {
+    max-width: 250px;
+    position: relative;
+  }
 
-.comfort__image {
-  width: 100%;
+  &__image-background {
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__image-background_1 {
+    top: 30px;
+    left: -120px;
+  }
+
+  &__image-background_2 {
+    top: -30px;
+    left: -400px;
+  }
+
+  &__image-background_3 {
+    top: 10px;
+    left: -150px;
+  }
+
+  &__image {
+    width: 100%;
+  }
 }
 
 /*-------------------------------------------------------------*/
@@ -1033,7 +1054,6 @@ div .questions__container {
 /*-------------------------------------------------------------*/
 /*-----Trial---------------------------------------------------*/
 /*-------------------------------------------------------------*/
-
 
 .trial {
   position: relative;
