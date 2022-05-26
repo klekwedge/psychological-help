@@ -479,7 +479,7 @@ body._lock {
 }
 
 /*-------------------------------------------------------------*/
-/*-----comfort-------------------------------------------------*/
+/*-----Try-----------------------------------------------------*/
 /*-------------------------------------------------------------*/
 
 .page__try {
@@ -986,6 +986,77 @@ div .questions__container {
     }
   }
 }
+
+
+/*-------------------------------------------------------------*/
+/*-----Trial---------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__trial {
+  margin-bottom: 120px;
+}
+
+.trial {
+  position: relative;
+  &__container {
+    display: flex;
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  &__text {
+    z-index: 1;
+    max-width: 450px;
+  }
+
+  &__title {
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: #093636;
+    margin-bottom: 30px;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: 22px;
+    color: #00325a;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: -60px;
+    left: 40%;
+    transform: translateX(-40%);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    top: -120px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__links {
+    position: relative;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    gap: 15px 15px;
+  }
+}
+
 
 /*-------------------------------------------------------------*/
 /*-----Footer--------------------------------------------------*/
